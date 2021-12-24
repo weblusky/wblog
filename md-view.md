@@ -13,7 +13,7 @@
 3. 需要一套适配的css样式
 
 ### 在看了lws的文档后
-发现lws支持middleware，接下来搜 md2转html 找到了 showdown，css文件也是搜来的。。。然后照猫画虎调试出来了 [md2html.js](https://github.com/weblusky/md-view/blob/main/md2html.js)。
+发现lws支持middleware，接下来搜 md2转html 找到了 [showdown](https://www.npmjs.com/package/showdown)，css文件也是搜来的。。。然后照猫画虎调试出来了 [md2html.js](https://github.com/weblusky/md-view/blob/main/md2html.js)。
 
 ### 主要功能代码如下
 ```
@@ -30,7 +30,7 @@
 ```
 通过 **ctx.type == 'text/markdown'** 来判断访问的是md格式文件
 
-通过 **body = converter.makeHtml(body)** 来转换内容格式
+通过 **body = converter.makeHtml(body)** 来转换内容格式, converter 来自 [showdown](https://www.npmjs.com/package/showdown)
 
 通过 **ctx.response.type = 'text/html'** 来修改输出格式
 
