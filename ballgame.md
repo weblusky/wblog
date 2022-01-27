@@ -26,7 +26,7 @@
 
 根据视频所说，最后这个543是个坑，概率很高。看着很简单，于是想起用程序实现一下。
 
-### ballgame.js
+### 逻辑脚本 ballgame.js
 
 ##### 初始化
 ```js
@@ -95,8 +95,8 @@ const resultMoney = (rt) => {
 }
 ```
 
-### ballgametest.js
-```
+### 调用脚本 ballgametest.js
+```js
 const {getBallResult, resultMoney} = require('./lib/ballgame.js')
 
 const count = 100 // 抓球次数
@@ -122,3 +122,5 @@ const playGame = (ct)=>{
 playGame(count)
 ```
 
+##### 代码地址
+https://github.com/weblusky/jsgame
