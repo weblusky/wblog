@@ -127,7 +127,7 @@ https://github.com/weblusky/jsgame
 
 
 ### 用法
-修改 balgametest.js 中 count = 100 的次数
+修改 ballgametest.js 中 count = 100 的次数
 ```node 
 node ballgametest.js
 ```
