@@ -122,5 +122,15 @@ const playGame = (ct)=>{
 playGame(count)
 ```
 
-##### 代码地址
+### 代码地址
 https://github.com/weblusky/jsgame
+
+
+### 用法
+修改 balgametest.js 中 count = 100 的次数
+```node 
+node ballgametest.js
+```
+
+### 结果
+果然玩的次数越多，亏的越多
